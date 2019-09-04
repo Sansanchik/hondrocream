@@ -663,7 +663,7 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
 
 /* Стили для маленьких экранов (телефоны в альбомной ориентации,
 дисплей 576 пикселей и более) */
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .wrapper { width: 768px;}
   .block1__top { font: 400 18px/40px "RobotoCondensed-Light";}
   .imlogo { width: 42%;}

@@ -530,11 +530,12 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
 .block5__img { margin: 5px; width: 35%; height: auto;}
 .block5 img { float: left; width: 100%;}
 
-.block5__wrap {width: 60%; float: right; background: #612549; border-radius: 20px 20px 0 0; font: 300 14px/24px "RobotoCondensed-Light"; padding: 15px 15px 14px; color: #FFFFff; position: relative; }
+.block5__wrap {width: 60%; float: right; background: #612549; border-radius: 20px 20px 20px 20px; font: 300 14px/24px "RobotoCondensed-Light"; padding: 15px 15px 14px; color: #FFFFff; position: relative; }
 
 .block5__wrap::before { content: ''; position: absolute; background: url("../images/img4.1.png") no-repeat 0 0 transparent; width: 50px; height: 33px; left: -25px; top: 110px; }
 
-.block5__name { color: #ffce22; padding: 40px 0 14px; }
+.block5__name { color: #ffce22; padding: 14px 0 14px; }
+
 
 /* block5 */
 /* block6 */
@@ -679,7 +680,7 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
   .block6 .wrapper { padding: 30px 0;}
   .block6 ul.inline, ol.inline {flex-wrap: nowrap;}
   .block8__title {font: 400 30px/34px "Lobster"; padding: 24px 0 24px 0;}
-  .block8 ul.inline, ol.inline {flex-wrap: nowrap;}
+  .block8 ul.inline, ol.inline {flex-wrap: nowrap;  background-size: contain;}
   .block7__delivery::before { right: -20px;}
   .block8 ul li { padding-top: 180px; width: 33%;}
 
@@ -695,6 +696,7 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
   .block1__right {  width: 51%;}
   .block2__top .wrapper { height: 445px;}
   .block3 {margin-top: 45px;}
+  .block4__bottom img {float: left; width: 55px;}
   .block4 ul li {font: 300 9px/20px "RobotoCondensed-Light";}
   .block4__bottom_name img{ width: 60px;}
   .block4__bottom_name { margin-left: 62px;}

@@ -468,7 +468,7 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
 
 .block2__top .wrapper { padding: 25px 0 35px 215px; height: 255px; background: url("../images/img2.0.png") no-repeat center 0 transparent; }
 
-.block2__top .wrapper::before { content: ''; position: absolute; background: url("../images/img2.1.png") 0 0 no-repeat transparent; width: 1069px; height: 455px; left: -10px; top: -15px; }
+.block2__top .wrapper::before { content: ''; position: absolute; background: url("../images/img2.1.png") 0 0 no-repeat transparent; width: 100%; height: 455px; left: -10px; top: -15px; }
 
 .block2__bottom { background: #612549; }
 
@@ -527,10 +527,10 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
 .block5 { margin-top: -142px; padding-top: 190px; background: url("../images/img4.0.png") no-repeat center bottom #3a1a2d; }
 
 .block5__title { font: 400 40px/40px "Lobster"; color: #ffce22; text-align: center; padding: 0 0 40px 0; }
+.block5__img { margin: 5px; width: 35%; height: auto;}
+.block5 img { float: left; width: 100%;}
 
-.block5 img { float: left; }
-
-.block5__wrap { margin-left: 345px; background: #612549; border-radius: 20px 20px 0 0; font: 300 20px/27px "RobotoCondensed-Light"; padding: 15px 15px 14px; color: #FFFFff; position: relative; }
+.block5__wrap {width: 60%; float: right; background: #612549; border-radius: 20px 20px 0 0; font: 300 14px/24px "RobotoCondensed-Light"; padding: 15px 15px 14px; color: #FFFFff; position: relative; }
 
 .block5__wrap::before { content: ''; position: absolute; background: url("../images/img4.1.png") no-repeat 0 0 transparent; width: 50px; height: 33px; left: -25px; top: 110px; }
 
@@ -583,10 +583,10 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
 /* block9 */
 /* block10 */
 .block10 { margin-top: 80px; background: transparent url("../images/img8.0.png") left 0 repeat-x; height: 450px; }
-.block10-list {display: flex;}
+.block10-list {display: flex;  flex-wrap: wrap; justify-content: center;}
 .block10__left { background: transparent url("../images/img8.5.png") 20px 38px no-repeat; }
 
-.block10 .wrapper::before { content: ''; position: absolute; background: transparent url("../images/img8.0.1.png") 0 0 no-repeat; width: 1000px; height: 450px; left: 0; top: 0; z-index: -1; }
+.block10 .wrapper::before { content: ''; position: absolute; background: transparent url("../images/img8.0.1.png") 0 0 no-repeat; width: 100%; height: 450px; left: 0; top: 0; z-index: -1; }
 
 .block10__title { color: #FFFFff; font: 700 38px/40px "Lobster"; padding: 55px 0 0 195px; position: relative; }
 
@@ -661,8 +661,9 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
 
 .price_reduce { color: #C00; }
 
+
 /* Стили для средних экранов (планшеты, дисплей 768 пикселей и более) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .wrapper { width: 768px;}
   .block1__top { font: 400 18px/40px "RobotoCondensed-Light";}
   .imlogo { width: 42%;}
@@ -671,7 +672,7 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
   .block1__right ul li { font: 300 17px/30px "RobotoCondensed-Light"; margin-left: 19px; padding: 5px 0 5px 50px;}
   .block2__top .wrapper { padding: 10px 0 40px 200px; height: 368px;}
   .block4__title { font: 400 30px/30px "Lobster"; padding: 28px 0;}
-  ul.inline, ol.inline { display: flex; flex-wrap: wrap;}
+  ul.inline, ol.inline { display: flex; flex-wrap: wrap; justify-content: center;}
   .block4 ul li { padding: 40px 35px 0 35px; width: 32%; position: relative; font: 300 14px/20px "RobotoCondensed-Light";}
   .block4 ul li::before { width: 97%; height: 440px;}
   .block5 { margin-top: -177px; padding-top: 164px;}
@@ -679,17 +680,43 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
   .block6 ul.inline, ol.inline {flex-wrap: nowrap;}
   .block8__title {font: 400 30px/34px "Lobster"; padding: 24px 0 24px 0;}
   .block8 ul.inline, ol.inline {flex-wrap: nowrap;}
+  .block7__delivery::before { right: -20px;}
   .block8 ul li { padding-top: 180px; width: 33%;}
+
 }
 
 /* Стили для маленьких экранов (телефоны иентации,
 дисплей 576 пикселей и более) */
-@media (max-width: 540px) {
+@media screen and (max-width: 540px) {
   .wrapper { width: 540px;}
+  .imlogo {display: none;}
+  .block1__top-action::before {right: -23px;}
+  .block1__left { width: 45%;}
+  .block1__right {  width: 51%;}
+  .block2__top .wrapper { height: 445px;}
+  .block3 {margin-top: 45px;}
+  .block4 ul li {font: 300 9px/20px "RobotoCondensed-Light";}
+  .block4__bottom_name img{ width: 60px;}
+  .block4__bottom_name { margin-left: 62px;}
+  .block3__list ul { display: flex; flex-wrap: wrap; justify-content: center;}
+  .block3__list ul li { display: block; width: 100%;}
+  .block6 ul, .block8 ul { background-size: contain;}
+  .block6 ul li {padding-top: 120px;}
+  .block7 {height: auto;}
+  .block7__warning { padding: 30px 225px 30px 20px; width: 100%; height: auto; font: 300 20px/28px "RobotoCondensed-Light";}
+
+  .block8 ul li {font: 300 15px/21px "RobotoCondensed-Light"; padding-top: 125px;}
+  .block10 {height: auto;}
   .block10__title::before {left: -25px;}
-  .block10__title {margin-left: 33px;}
+  .block10__title {font: 700 24px/40px "Lobster"; padding: 55px 0 0 210px; margin-left: 33px;}
+  .block10__sale { padding: 0 0 0 40px;}
+  .block10__price {margin: 25px 0 0 200px;}
   .block10__price .newprice { font: 400 26px/72px "RobotoCondensed-Light"; width: 41%;}
   .block10__price .oldprice { font: 400 26px/71px "RobotoCondensed-Light"; width: 43%;}
+  .block10-form { margin: 20px auto; width: auto;}
+   /* .block10-form { width: 260px;}
+  .form-horizontal .row-select { width: 230px;}
+  .form-horizontal .row select, .form-horizontal .row input[type="text"] { width: 230px;}*/
   }
 
 }

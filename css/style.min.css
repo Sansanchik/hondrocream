@@ -218,7 +218,7 @@
 
 .tab1 td { border: 1px solid #fff; color: #fff; padding: 20px 5px; text-align: center; }
 
-body { margin: 0; color: #fff; font: 17px/25px Georgia, "Times New Roman", Times, serif; background: #1f242a; min-width: 446px; }
+body { margin: 0; color: #fff; font: 17px/25px Georgia, "Times New Roman", Times, serif; background: #1f242a; min-width: 320px; }
 
 img { border-style: none; }
 
@@ -271,7 +271,7 @@ q:after { content: ''; }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
-body { margin: 0; }
+body { margin: 0 auto; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, div.section, summary { display: block; }
 
@@ -349,11 +349,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
-body { min-width: 1000px; background: url("../images/img1.0.1.png") repeat-x center 0 #3a1a2d; color: #2c4341; }
+body { max-width: 1000px; background: url("../images/img1.0.1.png") repeat-x center 0 #3a1a2d; color: #2c4341; }
 
 .wrapper-hidden { position: relative; overflow: hidden; width: 100%; height: 100%; }
 
-.wrapper { position: relative; z-index: 2; margin: 0 auto; width: 1000px; }
+.wrapper { position: relative; z-index: 2; margin: 0 auto; width: 100%; }
 
 * { box-sizing: border-box; }
 
@@ -365,7 +365,7 @@ li { line-height: 20px; }
 
 ul.unstyled, ol.unstyled { margin-left: 0; list-style: none; }
 
-ul.inline, ol.inline { margin-left: 0; list-style: none; }
+ul.inline, ol.inline { margin-left: 0; list-style: none; display: flex; flex-wrap: wrap; justify-content: space-around;}
 
 ul.inline > li, ol.inline > li { display: inline-block; *display: inline; padding-right: 5px; padding-left: 5px; *zoom: 1; }
 
@@ -512,7 +512,7 @@ ul.list-inline li.helper { padding: 0; margin: 0; width: 100%; height: 0px; visi
 
 .block4__title { font: 400 40px/40px "Lobster"; color: #3a1a2d; text-align: center; padding: 40px 0; }
 
-.block4 ul li { padding: 40px 35px 0 35px; vertical-align: top; width: 330px; position: relative; height: 446px; color: #3a1a2d; font: 300 16px/22px "RobotoCondensed-Light"; }
+.block4 ul li {display: block; padding: 40px 35px 0 35px; vertical-align: top; width: 30%; position: relative; height: 446px; color: #3a1a2d; font: 300 16px/22px "RobotoCondensed-Light"; }
 
 .block4 ul li::before { content: ''; position: absolute; background: url("../images/img3.6.png") no-repeat 0 0 transparent; width: 346px; height: 445px; left: -8px; top: 0; z-index: -1; }
 

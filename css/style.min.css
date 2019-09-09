@@ -674,10 +674,11 @@ width: 106px; text-align: center; display: inline-block;
 .price_reduce { color: #C00; }
 
 
-/* Стили для средних экранов (планшеты, дисплей 768 пикселей и более) */
+/* Стили для средних экранов (планшеты, дисплей 768 пикселей) */
 @media screen and (max-width: 768px) {
   .wrapper { width: 768px;}
   .block1__top { font: 400 18px/40px "RobotoCondensed-Light";}
+  .block1__top-sale { left: 62px; top: -26px;}
   .imlogo { width: 42%;}
   .block1__title { padding: 40px 0 30px 0; font: normal 26px/38px "Lobster";}
   .block1__sub { width: 50%;font: 300 16px/31px "RobotoCondensed-Light";}
@@ -693,11 +694,11 @@ width: 106px; text-align: center; display: inline-block;
   .block8__title {font: 400 30px/34px "Lobster"; padding: 24px 0 24px 0;}
   .block8 ul.inline, ol.inline {flex-wrap: nowrap;  background-size: contain;}
   .block8 ul li { padding-top: 180px; width: 33%;}
+   .block10__left {width: 64%;}
 
 }
 
-/* Стили для маленьких экранов (телефоны иентации,
-дисплей 576 пикселей и более) */
+/* Стили для маленьких экранов */
 @media screen and (max-width: 540px) {
   .wrapper { width: 540px;}
   .imlogo {display: none;}
